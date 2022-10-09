@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Dosis";
+  src: url(../../public/fonts/Dosis-Regular.ttf);
+}
+
+:root {
+  --main-text: "Dosis";
+}
+
+.text {
+  font-family: var(--main-text);
+  color: var(--text);
+  font-weight: 400;
+  &--mobileMenu {
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+  &--heading {
+    text-transform: uppercase;
+    font-size: 58px;
+    line-height: 55px;
+    text-align: center;
+  }
+  &--subheading {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  &--deskMenu {
+    text-transform: uppercase;
+    font-size: 28px;
+  }
+}

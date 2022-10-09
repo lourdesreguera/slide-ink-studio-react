@@ -6,10 +6,30 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.b-header__logo {
+  width: 24px;
 }
 
 .b-header__menu {
   z-index: 1;
+}
+
+.b-header__menu-image {
+  @media (min-width: 1024px) {
+    display: none
+  }
+}
+
+.b-header__menu-desk {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .b-header__menu-show {

@@ -10,7 +10,11 @@ const Header = () => {
   return (
     <header className="b-header">
       <div className="b-header__logo">
-        <img src=".images/logo.png" alt="Logo de Slide Ink Studio" />
+        <img
+          className="b-header__logo"
+          src="./images/logo.png"
+          alt="Logo de Slide Ink Studio"
+        />
       </div>
       <div className="b-header__menu">
         <img
@@ -19,6 +23,17 @@ const Header = () => {
           alt="Menú desplegable"
           onClick={() => dispatch(showMenu())}
         />
+        <nav className="b-header__menu-desk">
+          <a href="#" className="link text text--deskMenu">
+            Home
+          </a>
+          <a href="#" className="link text text--deskMenu">
+            Artists
+          </a>
+          <a href="#" className="link text text--deskMenu">
+            Contact
+          </a>
+        </nav>
       </div>
       <div
         className={
