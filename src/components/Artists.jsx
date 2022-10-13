@@ -1,9 +1,11 @@
 import React from 'react'
+import ArtistCard from './ArtistCard'
 
 const Artists = () => {
   return (
-    <div>
-      <h2>Artists</h2>
+    <div className='b-artists'>
+      <h2 className='text text--section'>Artists</h2>
+      <ArtistCard />
     </div>
   )
 }

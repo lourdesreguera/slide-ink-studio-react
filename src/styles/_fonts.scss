@@ -11,22 +11,51 @@
   font-family: var(--main-text);
   color: var(--text);
   font-weight: 400;
+  text-transform: uppercase;
   &--mobileMenu {
-    text-transform: uppercase;
     font-size: 60px;
   }
   &--heading {
-    text-transform: uppercase;
     font-size: 58px;
     line-height: 55px;
     text-align: center;
+    @media (min-width: 1024px) {
+      font-size: 100px;
+      line-height: normal;
+    }
   }
   &--subheading {
-    text-transform: uppercase;
     font-size: 20px;
+    @media (min-width: 1024px) {
+      font-size: 28px;
+    }
   }
   &--deskMenu {
-    text-transform: uppercase;
     font-size: 28px;
+    margin-left: 50px;
+  }
+  &--section {
+    font-size: 26px;
+    margin-bottom: 48px;
+    @media (min-width: 1440px) {
+      font-size: 30px;
+      margin: 100px 0 70px 0;
+    }
+  }
+  &--artist {
+    font-size: 24px;
+    margin-bottom: 14px;
+    text-align: start;
+    @media (min-width: 1440px) {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+  }
+  &--btn {
+    font-size: 16px;
+    padding: 10px 0;
+    @media (min-width: 1440px) {
+      font-size: 20px;
+    }
   }
 }

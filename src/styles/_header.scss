@@ -8,10 +8,18 @@
   align-items: center;
   padding: 15px;
   box-sizing: border-box;
+  background-color: var(--bcg-header);
+  z-index: 1;
+  @media (min-width: 1024px) {
+    padding: 20px 40px;
+  }
 }
 
 .b-header__logo {
   width: 24px;
+  @media (min-width: 1024px) {
+    width: 75px;
+  }
 }
 
 .b-header__menu {

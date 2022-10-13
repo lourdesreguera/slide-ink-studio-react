@@ -6,4 +6,8 @@ body, h1, h2, h3, p {
 body {
   box-sizing: border-box;
   background-color: var(--bcg);
+  font-family: var(--main-text);
+  font-size: 20px;
+  color: var(--text);
+  font-weight: 200;
 }
