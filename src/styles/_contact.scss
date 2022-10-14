@@ -1,0 +1,39 @@
+.b-contact {
+  margin: 0 40px;
+  padding-top: 60px;
+  border-top: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
+  @media (min-width: 1300px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.b-contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.b-contact__data {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  &--card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+}
+
+.b-contact__icon {
+  margin-right: 16px;
+}

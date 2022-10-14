@@ -1,6 +1,7 @@
 import React from "react";
 import artists from "../artists";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ArtistCard = () => {
   const [imageSize, setImageSize] = useState("");
@@ -39,7 +40,7 @@ const ArtistCard = () => {
               onMouseEnter={() => changeImage(key)}
               onMouseLeave={changeImageSmall}
             >
-              Ver más
+              <Link to={`/${artist.name}`} className="link text text--btn">Ver más</Link>
             </button>
           </div>
         );

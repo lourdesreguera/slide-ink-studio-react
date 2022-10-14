@@ -1,0 +1,19 @@
+.b-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-footer__container {
+    display: flex;
+    align-items: center;
+    margin: 30px 15px;
+    @media (min-width: 1024px) {
+        margin: 40px 20px;
+      }
+}
+
+.b-footer__icon {
+    width: 34px;
+    margin-right: 7px;
+}

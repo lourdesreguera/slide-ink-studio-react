@@ -1,11 +1,22 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { showMenu } from "../redux/menu/menu.actions";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const dispatch = useDispatch();
   const { isMenuShown } = useSelector((state) => state.menu);
+
+  const Scroll = require("react-scroll");
+  const scroller = Scroll.scroller;
+
+  const scrollToSection = (ev) => {
+    scroller.scrollTo(ev.target.innerText.toLowerCase(), {
+      smooth: true,
+      duration: 600,
+    });
+  };
 
   return (
     <header className="b-header">
@@ -24,15 +35,15 @@ const Header = () => {
           onClick={() => dispatch(showMenu())}
         />
         <nav className="b-header__menu-desk">
-          <a href="#" className="link text text--deskMenu">
+          <Link to='/' className="link text text--deskMenu" onClick={scrollToSection}>
             Home
-          </a>
-          <a href="#" className="link text text--deskMenu">
+          </Link>
+          <Link to='/' className="link text text--deskMenu" onClick={scrollToSection}>
             Artists
-          </a>
-          <a href="#" className="link text text--deskMenu">
+          </Link>
+          <Link to='/' className="link text text--deskMenu" onClick={scrollToSection}>
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
       <div

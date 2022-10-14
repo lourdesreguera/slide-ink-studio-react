@@ -14,7 +14,10 @@
     background-color: transparent;
     &:hover {
       background-color: var(--text);
-      color: var(--bcg);
+      a {
+        color: var(--bcg);
+
+      }
     }
     @media (min-width: 1440px) {
       margin-top: 50px;
