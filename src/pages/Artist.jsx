@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import artists from "../artists";
 import About from "../components/About";
 import { useEffect } from "react";
+import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
 
 const Artist = () => {
   const { name } = useParams();
@@ -27,6 +29,8 @@ const Artist = () => {
         <h1 className="text text--nick tracking-in-contract">{artist.nick}</h1>
       </div>
       <About artist={artist} />
+      <Gallery />
+      <Footer />
       <div className="opening opening--bottom"></div>
     </div>
   );
