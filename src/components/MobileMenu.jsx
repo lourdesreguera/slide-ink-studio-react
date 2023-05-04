@@ -18,13 +18,25 @@ const MobileMenu = () => {
 
   return (
     <nav className="b-mobileNav">
-      <Link to='/' className="link text text--mobileMenu" onClick={scrollToSection}>
+      <Link
+        to="/"
+        className="link text text--mobileMenu"
+        onClick={scrollToSection}
+      >
         Home
       </Link>
-      <Link to='/' className="link text text--mobileMenu" onClick={scrollToSection}>
+      <Link
+        to="/"
+        className="link text text--mobileMenu"
+        onClick={scrollToSection}
+      >
         Artists
       </Link>
-      <Link to='/' className="link text text--mobileMenu" onClick={scrollToSection}>
+      <Link
+        to="/"
+        className="link text text--mobileMenu"
+        onClick={scrollToSection}
+      >
         Contact
       </Link>
     </nav>

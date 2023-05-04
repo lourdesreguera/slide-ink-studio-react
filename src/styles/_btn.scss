@@ -1,12 +1,5 @@
 .btn {
   cursor: pointer;
-  &--hero {
-    width: 20px;
-    transform: rotate(45deg);
-    height: 20px;
-    position: relative;
-    top: 100px;
-  }
   &--artist {
     width: 100%;
     border-radius: 40px;
@@ -16,7 +9,6 @@
       background-color: var(--text);
       a {
         color: var(--bcg);
-
       }
     }
     @media (min-width: 1440px) {
