@@ -29,7 +29,7 @@ const Artist = () => {
         <h1 className="text text--nick tracking-in-contract">{artist.nick}</h1>
       </div>
       <About artist={artist} />
-      <Gallery />
+      <Gallery artist={artist} />
       <Footer />
       <div className="opening opening--bottom"></div>
     </div>

@@ -1,6 +1,7 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+
+// redux
 import { showMenu } from "../redux/menu/menu.actions";
 
 const MobileMenu = () => {

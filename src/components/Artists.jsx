@@ -1,4 +1,4 @@
-import React from 'react'
+// custom
 import ArtistCard from './ArtistCard'
 
 const Artists = () => {
