@@ -1,17 +1,30 @@
 .b-gallery {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .alice-carousel__stage-item * {
-    width: 100%;
+  width: 100%;
 }
 
 .alice-carousel {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .alice-carousel__next-btn {
-    text-align: left;
+  text-align: left;
+}
+
+.alice-carousel__next-btn-item {
+  color: var(--nextBtn) !important ;
+}
+
+.alice-carousel__prev-btn-item {
+    color: var(--nextBtn) !important ;
+  }
+  
+
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: var(--nextBtn) !important ;
 }
