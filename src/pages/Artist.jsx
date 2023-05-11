@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useParams } from "react-router-dom";
 import artists from "../artists";
 import About from "../components/About";
