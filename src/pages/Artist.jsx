@@ -1,7 +1,9 @@
 import { Link, useParams } from "react-router-dom";
+import { useEffect } from "react";
+
+// custom
 import artists from "../artists";
 import About from "../components/About";
-import { useEffect } from "react";
 import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 
